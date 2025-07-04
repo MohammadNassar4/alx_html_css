@@ -304,3 +304,69 @@ section.courses {
     font-size: 14px;
     color: #C271FF;
 }
+
+.membership {
+    height: 502px;
+    width: 100%;
+    background-color: #071629;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+}
+
+.membership h2 {
+    font-size: 32px;
+    color: white;
+    font-weight: lighter;
+}
+
+.membership h2 span {
+    color: #C271FF;
+    font-weight: bold;
+}
+
+.plan {
+    width: 275px;
+    height: 153px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.plan h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.plan p {
+    font-size: 14px;
+    color: white;
+}
+
+.plan img {
+    width: 43.67px;
+    height: 35.35px;
+}
+
+.membership button {
+    width: 180px;
+    height: 44px;
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    background-color: #C271FF;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
