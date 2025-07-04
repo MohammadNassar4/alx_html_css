@@ -9,6 +9,11 @@ body {
     overflow-x: hidden;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 header {
     padding: 30px 100px;
 }
@@ -43,6 +48,13 @@ a {
     z-index: 1;
 }
 
+.landing-wraper {
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(7, 22, 41, 1)), url('media/landing-BW.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .landing {
     display: flex;
     flex-direction: column;
@@ -51,9 +63,6 @@ a {
     text-align: center;
     width: 100vw;
     height: 150vh;
-    background: linear-gradient(rgba(0, 0, 0, .3), rgba(7, 22, 41, 1)), url('media/landing-BW.png');
-    position: absolute;
-    top: 0px;
 }
 
 .hero {
@@ -89,7 +98,7 @@ a {
     border: none;
     outline: none;
     border-radius: 22px;
-    box-shadow: 0 0 20px black;
+    box-shadow: 0 0 20px rgb(58, 58, 58);
     cursor: pointer;
     position: relative;
     left: calc(50% - 90px);
@@ -142,4 +151,156 @@ a {
     color: white;
     font-size: 16px;
     font-style: italic;
+}
+
+.quote {
+    height: 392px;
+    width: 100%;
+    background-color: #C271FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-container {
+    width: 943px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    gap: 53px;
+}
+
+.quote-container img {
+    border-radius: 50%;
+}
+
+.quote-wraper {
+    padding: 10px 0;
+}
+
+blockquote {
+    font-size: 20px;
+    color: white;
+    height: 68px;
+    margin-bottom: 10px;
+}
+
+.quote-container h3 {
+    font-size: 22px;
+    color: white;
+    height: 34px;
+    margin-bottom: 10px;
+}
+
+.quote-container p {
+    font-size: 22px;
+    font-style: italic;
+    color: white;
+    height: 34px;
+}
+
+section.courses {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.courses-container {
+    height: 450px;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 60px;
+}
+
+.courses-container h2 {
+    font-size: 32px;
+    font-weight: lighter;
+    color: #071629;
+    height: 40px;
+}
+
+.courses-container h2 span {
+    font-weight: bold;
+    color: #C271FF;
+}
+
+.course-wraper {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.thumpnail {
+    width: 255px;
+    height: 154px;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+}
+
+.thumpnail::after {
+    content: '';
+    background-image: url(./media/play.png);
+    position: absolute;
+    z-index: 2;
+    width: 64px;
+}
+
+.course-author {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.rating {
+    display: flex;
+}
+
+.course h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #071629;
+}
+
+.course p {
+    width: 242px;
+    font-size: 14px;
+    color: rgb(7, 22, 41, .5);
+}
+
+.course {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+}
+
+.author-wraper {
+    display: flex;
+    align-items: center;
+}
+
+.author-wraper img {
+    float: left;
+    margin-right: 10px;
+}
+
+.author-wraper h4 {
+    font-size: 14px;
+    color: #C271FF;
+    
+}
+
+.rating-time {
+    width: 255px;
+    display: flex;
+    justify-content: center;
+}
+
+.rating-time p {
+    font-size: 14px;
+    color: #C271FF;
 }
