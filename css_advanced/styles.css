@@ -418,3 +418,46 @@ section.courses {
     font-size: 14px;
     color: rgb(7, 22, 41, .5);
 }
+
+footer {
+    height: 249px;
+    width: 100%;
+    background-color: #071629;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-logo {
+    width: 169px;
+    height: 30px;
+}
+
+.fa-brands {
+    color: white;
+    width: 30px;
+    height: 30px;
+}
+
+footer section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 100px 100px 30px 100px;
+    position: relative;
+}
+
+footer section div {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer section p {
+    font-size: 12px;
+    color: rgb(255, 255, 255, .3);
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    translate: -50% -50%;
+}
